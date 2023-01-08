@@ -1,37 +1,52 @@
-body {
+* {
   margin: 0;
-  background-color: #2C2B3D;
-  
-  min-width: 100vh;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #2f2e41;
+  color: white;
+}
+span {
+  color: #00BFA6;
+  font-weight: bold;
 }
 
 #page {
-  margin: 71px auto 0;
-  width: 1280px;
+  padding: 71px 100px;
 }
 
-nav {
-  margin: 0 auto 0;
+header {
+  font-family: 'JetBrains Mono', monospace;
   display: flex;
-  justify-content: space-between;
+  padding-bottom: 71px;
   align-items: center;
+  justify-content: space-around;
   
 }
 
-ul {
+figure img {
+  width: 168px;
+  height: 63px;
+}
+
+nav ul {
+  padding-left: 595px;
   display: flex;
   list-style: none;
   gap: 64px;
   
 }
-ul li a {
-  color: white
+
+nav ul li  {
+  font-size: 14px;
+  line-height: 28px;
 }
 
 a {
   text-decoration: none;
-  font-family: 'JetBrains Mono', monospace;
-
+  color: white;
 }
 
 ul li a:hover {
@@ -39,54 +54,48 @@ ul li a:hover {
 }
 
 main {
-margin: 101px auto 157px;
+font-family: 'Open Sans', sans-serif;
 display: flex;
-justify-content: space-between;
-text-align: center;
+justify-content: space-around;
+
 }
 
-h1 { 
+main figure img {
+  width: 401px;
+  height: 283px;
+}
+
+main h2 { 
   font-family: 'JetBrains Mono', monospace;
   font-size: 36px;
   line-height: 40px;
-  color: white;
-  margin-bottom: 59;
+  padding-bottom: 58px;
+  max-width: 610px;
 }
 
-h1 span {
-  color: #00BFA6;
 
-}
+main p{
 
-p span {
-  color: #00BFA6;
-  font-weight: bold;
-}
-
-p{
-  color: #C2C2C2;
+  padding-bottom: 58px;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
+  color: #c2c2c2;
+  font-weight: 400;
   line-height: 28px;
-}
-section p {
-
- width: 604px;
-font-family: 'Open Sans', sans-serif;
-
-
+  text-align: center;
 }
 
-#line {
-  border: 1px solid #00BFA6;
-  height: 0px;
+
+.line {
+  margin: 0 auto;
   width: 568px;
-  margin: 157px auto 27px;
-
+  border: 1px solid #00bfa6;
+  margin-top: 157px;
 }
 
-
-footer p {
-  color: white;
+footer  {
+  padding-top: 27px;
+  font-size: 14px;
   text-align: center;
   font-family: 'JetBrains Mono', monospace;
 }
@@ -95,9 +104,10 @@ footer a {
   color:white;
 }
 
-footer img {
-  position: fixed;
-  left: 20px;
-  bottom: 20px;
+.lock {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 20px;
 }
 
